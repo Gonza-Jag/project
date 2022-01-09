@@ -1,27 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     background-color: #a89f23;
     font-size: 2rem;
-    /*font-weight: 400;
-    line-height: 1.6;
-    color: rgb(0, 0, 0);*/
 }
 
-h1 , h2 , h3 {
+h1,
+h2,
+h3 {
     text-align: center;
 }
-.container{
+
+.container {
     width: 100%;
     margin: 0 auto;
     border-radius: 0.5rem;
@@ -30,35 +31,45 @@ h1 , h2 , h3 {
 /*         HEADER           */
 
 
-header{
+header {
     background-color: rgb(231, 188, 135);
-    position:relative;
+    position: relative;
     top: 0;
     width: 100%;
 }
-.header--container{
+
+.header--container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-.header--logo{
+
+.header--logo {
     width: 16rem;
     height: auto;
 }
-.header--logo img{
+
+.header--logo img {
     width: 75%;
     height: auto;
 }
-.header--navbar--menu{
+
+.header--logo img:hover {
+    transform: scale(1.2)
+}
+
+.header--navbar--menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem;
+    font-size: 2rem;
 }
-.header--navbar--menu li{
+
+.header--navbar--menu li {
     background-color: rgb(55, 197, 98);
     border-radius: 0.5rem;
 }
@@ -67,12 +78,13 @@ header{
 /*            MAIN         */
 
 
-.main--container{
+.main--container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
+
 .main--container .section--principal {
     background-image: url(./img/fondo.jpg);
     background-size: cover;
@@ -81,7 +93,8 @@ header{
     height: 50rem;
     width: 100%;
 }
-.main--container .section--principal h1{
+
+.main--container .section--principal h1 {
     color: rgb(70, 16, 9);
     font-size: 4rem;
     font-weight: bold;
@@ -89,7 +102,30 @@ header{
     position: relative;
     top: 25rem;
 }
-.card{
+
+.section--principal h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.section--principal h1:hover {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+.card {
     color: black;
     border-radius: 1rem;
     display: flex;
@@ -103,44 +139,49 @@ header{
     background-color: white;
 
 }
-.card--title{
+
+.card--title {
     font-size: 2rem;
     font-weight: bold;
     border-radius: 0.5rem;
 }
-.card img{
+
+.card img {
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
 }
-.card--text{
+
+.card--text {
     font-size: 1.8rem;
     font-weight: 300;
 }
 
 
 
-.footer{
-    background-color:#706a0c;
+.footer {
+    background-color: #706a0c;
     width: 100%;
 }
-.footer--container{
+
+.footer--container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.footer--container .footer--logo{
+.footer--container .footer--logo {
     width: 10rem;
     height: auto;
 }
 
-.footer--container .footer--logo img{
+.footer--container .footer--logo img {
     width: 100%;
     height: auto;
 }
-.footer--navbar--menu{
+
+.footer--navbar--menu {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -149,11 +190,12 @@ header{
     padding: 1rem;
 }
 
-.footer--navbar--menu .footer--navbar--item{
+.footer--navbar--menu .footer--navbar--item {
     width: 3rem;
     height: auto;
 }
-.footer--navbar--menu .footer--navbar--item img{
+
+.footer--navbar--menu .footer--navbar--item img {
     width: 100%;
     height: auto;
 }
