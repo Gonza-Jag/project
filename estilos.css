@@ -12,7 +12,7 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #a89f23;
-    font-size: 1.6rem;
+    font-size: 2rem;
     /*font-weight: 400;
     line-height: 1.6;
     color: rgb(0, 0, 0);*/
@@ -43,7 +43,7 @@ header{
     flex-wrap: wrap;
 }
 .header--logo{
-    width: 15rem;
+    width: 16rem;
     height: auto;
 }
 .header--logo img{
